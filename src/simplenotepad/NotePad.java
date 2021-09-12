@@ -214,8 +214,7 @@ public class NotePad extends javax.swing.JFrame {
         int n = jfc.showSaveDialog(this);
         if(n==JFileChooser.APPROVE_OPTION) {
         	String contents = ta.getText(); // 파일에 저장할 내용
-        	// 저장할 파일명 얻기
-        	File saveFile = jfc.getSelectedFile();
+        	File saveFile = jfc.getSelectedFile(); // 저장할 파일명 얻기
         	if(saveFile==null) return;
         	String path = saveFile.getAbsolutePath();
         	setTitle(path);
@@ -241,7 +240,7 @@ public class NotePad extends javax.swing.JFrame {
 	}
 
 	private void btInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInfoActionPerformed
-        showMsg("Welcome to NotePad\n작성자: 양진철\n작성일:2020-06-15\nversion:1.1");
+        showMsg("Welcome to NotePad\n작성자:양진철\n작성일:2020-06-15\nversion:1.1");
     }//GEN-LAST:event_btInfoActionPerformed
     
     public void showMsg(String msg) {
