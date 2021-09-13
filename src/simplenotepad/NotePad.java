@@ -56,7 +56,7 @@ public class NotePad extends javax.swing.JFrame {
         lbImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("::NotePad v1.1::");
+        setTitle("::NotePad v1.0::");
 
         jToolBar1.setRollover(true);
 
@@ -209,7 +209,7 @@ public class NotePad extends javax.swing.JFrame {
     	
     }//GEN-LAST:event_btOpenActionPerformed
 
-    JFileChooser jfc = new JFileChooser("C:/Myjava");
+    JFileChooser jfc = new JFileChooser("C:/");
     private void btSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSaveActionPerformed
         int n = jfc.showSaveDialog(this);
         if(n==JFileChooser.APPROVE_OPTION) {
@@ -240,7 +240,7 @@ public class NotePad extends javax.swing.JFrame {
 	}
 
 	private void btInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInfoActionPerformed
-        showMsg("Welcome to NotePad\n작성자:양진철\n작성일:2020-06-15\nversion:1.1");
+        showMsg("Welcome to NotePad\n작성자:양진철\n작성일:2020-06-15\nversion:1.0");
     }//GEN-LAST:event_btInfoActionPerformed
     
     public void showMsg(String msg) {
